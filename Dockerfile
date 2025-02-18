@@ -5,7 +5,7 @@ FROM nginx:latest
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # Copy the HTML files to the Nginx default HTML directory
-COPY . /var/www/html
+COPY . /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
